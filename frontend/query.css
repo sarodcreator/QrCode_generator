@@ -1,0 +1,1197 @@
+/* Popup background overlay */
+/** Media Query starts here**/
+@media screen and (max-width: 600px) {
+    body{
+        width: 100%;
+        padding: 0 16px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    }
+    .navbar-toggler{
+        margin-left: 0;
+    }
+    .navbar{
+        display: grid;
+
+    }
+    .header{
+        padding: 0 !important;
+        width: 100%;
+        text-align: right;
+    }
+    #signup{
+        display: none;
+    }
+    #login{
+        background-color: rgb(3, 126, 85) !important;
+        border-radius: 4px;
+    }
+    #login a{
+        color: rgb(254, 254, 254) !important;
+    }
+    .navbar-nav{
+        background-color: rgb(3, 126, 85);
+        z-index: 1;
+    }
+    .navbar-nav a{
+        color: rgb(254, 254, 254) !important;
+        font-size: 14px;
+        margin-right: 16px;
+    }
+    .dropdown-menu{
+        border: none !important;
+        background-color: rgb(3, 70, 47) !important;
+    }
+    .dropdown-menu li{
+        margin-right: 16px;
+        margin-top: 4px;
+        text-align: right;
+        font-size: 14px;
+    }
+    .dropdown-menu li a:hover{
+        background-color: rgb(3, 70, 47);
+    }
+    .herosec{
+        width: 100%;
+        padding: 20px 16px;
+        display: block;
+        text-align: left;
+    }
+    .herosec p{
+        font-size: 14px;
+    }
+    .herosec-images{
+        width: 100%;
+        display: block;
+        margin-top: 16px;
+    }
+    .herosec-images #img1, #sec-bottom{
+        display: none;
+    }
+    .herosec-img{
+        border-radius: 0%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .hero{
+        display: block; 
+        padding: 0 16px 32px;
+        margin-top: -48px; 
+    }
+    .hero .left{
+        display: inline;
+        border-color: rgb(194, 193, 193);
+        padding: 0;
+    }
+    .hero .left .buttons .type{
+        border: 1px solid rgb(194, 193, 193);
+        margin-right: 0 !important;
+    }
+    .left .file h3{
+        font-size: 16px;
+    }
+    .left .file a, .left .file  p{
+        font-size: 12px;
+        text-align: center;
+    }
+    .left .file input::placeholder{
+        font-size: 12px;
+        color: rgb(194, 193, 193);
+
+    }
+    .right{
+        width: 100%;
+        padding: 0 24px;
+        padding-bottom: 16px;
+        margin: 0;
+        border: 1px solid rgb(194, 193, 193);
+        border-radius: 8px;
+    }
+    .right .qrcode{
+        margin-left: -20px !important;
+        padding: 0;
+    }
+    
+    .right .qrcode{
+        width: 100%;
+        height: 100%;
+    }
+    .right .download_btn{
+        display: block;
+    }
+    .right .download_btn .download{
+        width: 100%;
+        margin-bottom: 8px;
+        padding: 8px 0;
+        font-size: 12px;
+        font-weight: 600px;
+    }
+    .right .download_btn .download:hover{
+        background-color: rgb(3, 126, 85);
+    }
+    #SVG{
+        margin: 0;  
+    }
+    #frame{
+        width: 100%;
+    }
+    .hero-bottom{
+       
+        display: block;
+        padding: 0;
+
+    }
+    .hero-bottom .hero-btm{
+        font-size: 12px;
+        font-weight: 500px;
+        word-wrap:normal;
+        text-align: center;
+        border: 1px solid rgb(246, 246, 246);
+        width: 100%;
+    }
+    .benefits{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 0 16px;
+        margin-top: 80px;
+    }
+    .benefits .content{
+        display: block;
+        width: 100%;
+
+    }
+    .benefits .content h2{
+        text-align: center !important;
+        font-weight: 600px !important;
+        margin-bottom: 40px;
+    }
+    .benefits .content p{
+        font-size: 12px;
+    }
+    .benefits .content .detail{
+        margin-top: 8px;
+    }
+    .benefits img{
+        width: 100%;
+        margin: 8px 0;
+    }
+    .dynamicvsstatic{
+        padding: 0 16px !important;
+        width: 100%;
+    }
+    #title{
+        width: 100%;
+        padding: 40px 16px;
+    }
+    #title p{
+        font-size: 12px;
+        margin-top: 40px;
+        text-align: left;
+    }
+    .compare{
+        display: block;
+        width: 100%;
+        margin-top: 24px;
+    }
+    .compare .compare-left .title, .compare .compare-right .title{
+        font-size: 8px;
+        width: 20%;
+    }
+    .compare .compare-left{
+        width: 100%;
+        border: 1px solid rgb(246, 246, 246)
+    }
+    
+    .compare .compare-left p, .compare .compare-right p {
+        font-size: 12px;
+    }
+    .compare .compare-right{
+        width: 100%;
+        margin-top: 24px;
+        border: 1px solid rgb(246, 246, 246);
+    }
+    .create_code{
+        padding: 40px 16px;
+        margin: 0;
+    }
+    .create_code .title{
+        width: 20%;
+        font-size: 10px;
+    }
+    .create_code h2{
+        font-size: 22px;
+        font-weight: 600px;
+    }
+    .create_code .steps{
+        width: 100%;
+        justify-content: space-between;
+        margin: 0;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column; 
+        margin-bottom: 40px !important;   
+}
+    .create_code .steps .right{
+       margin: 0;
+       padding: 8px;
+       border: none;
+    }
+    .create_code .steps p{
+        font-size: 12px;
+        width: 100%;
+        margin: 0;
+    }
+    .create_code .steps h1{
+        color: rgb(3, 126, 85);
+    }
+    .create_code .steps .left{
+        box-shadow: 0;
+        box-shadow: 4px 4px rgb(3, 126, 85) !important;
+        border: 1px solid rgb(3, 126, 85);
+        width: 20%;
+        margin-bottom: 40px;
+    }
+    .create_code .step{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+        margin-bottom: 40px !important;
+    }
+    .create_code .step .right{
+        margin: 0;
+        padding: 8px;
+        border: none;
+     }
+     .create_code .step p{
+        font-size: 12px;
+        width: 100%;
+        margin: 0;
+    }
+    .create_code .step h1{
+        color: rgb(3, 126, 85);
+    }
+    .create_code .step .right{
+        border: none;
+
+    }
+    .create_code .step .left{
+        margin: 0 auto 32px;
+        box-shadow: 4px 4px rgb(3, 126, 85) !important;
+        border: 1px solid rgb(3, 126, 85);
+    }
+    .create_code .step h6, .steps h6{
+        font-size: 16px !important;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    .create_code #generate{
+        font-size: 14px;
+        margin:  48px auto 0;
+    }
+    .aboutsection{
+        display: block;
+        left: 0;
+        width: 100%;
+    }
+
+    .about{
+        background-color: rgb(3, 126, 85);
+        padding: 40px 16px 0;    
+    }
+    .about h6{
+        font-size: 22px !important;
+        margin-bottom: 8px !important;
+    }
+    .about p{
+        font-size: 12px !important;
+        margin-top: 32px;
+    }
+    .about h5{
+        font-size: 14px !important;
+        font-weight: 600 !important;
+        margin-bottom: 4px;
+    }
+    .aboutsection button{
+        font-size: 14px;
+    }
+    .aboutsection{
+        display: block;
+        width: 100%;
+    }
+    .about .cards{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+    .about .cards .card{
+        width: 100%;
+    }
+    .about .cards #middle, #top, #bottom{
+        margin: 0;
+        margin-bottom: 40px;
+    }
+    .aboutUs{
+        padding: 0;
+    }
+    .aboutUs h3{
+        font-size: 16px;
+        margin-top: 16px;
+    }
+    .aboutUs p{
+        font-size: 12px;
+    }
+    .aboutUs h1{
+        padding: 40px 0;
+    }
+    .contact{
+        padding: 0;
+        margin-bottom: 48px;        
+    }
+    .contact .title{
+        padding: 40px 0 80px;
+        margin-top: 48px;
+        margin: 0;
+    }
+    .contact #feedback-form-container{
+        width: 90%;
+        margin-top: -24px;
+    }
+    .contact #feedback-form{
+        width: 100%;
+        padding:  24px 16px 8px;
+    }
+    #feedback-form input,
+    #feedback-form textarea{
+        width: 100%;
+    }
+    .contact #feedback-form h5{
+        margin: 0;
+    }
+    #feedback-form button{
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    #footer{
+        padding: 40px 16px;
+    }
+    .footer{
+        display: inline-block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer #footer-logo{
+        font-size: 16px;
+        margin: 60px 0 20px;
+        text-align: left;
+    }
+    .footer p{
+        font-size: 12px;
+        text-align: left;
+    }
+    .footer ul{
+        margin-top: 56px;
+        text-align: left;
+        padding: 0;
+    }
+    .footer ul li a{
+        font-size: 12px;
+        margin-bottom: 4px !important;
+    }
+}
+@media screen and (min-width: 768px) {
+    body{
+        width: 100%;
+        padding: 0 16px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    }
+    .nav{
+        display: none;
+    }
+    .header{
+        padding: 0 !important;
+        width: 100%;
+        background-color: rgb(254, 254, 254);
+    }
+    #collapsibleNavbar{
+        display: none;
+    }
+    .herosec{
+        width: 100%;
+        padding: 20px 16px;
+        display: block;
+        text-align: left;
+    }
+    .herosec p{
+        font-size: 14px;
+    }
+    .herosec-images{
+        width: 100%;
+        display: block;
+        margin-top: 16px;
+    }
+    .herosec-images #img1, #sec-bottom{
+        display: none;
+    }
+    .herosec-img{
+        border-radius: 0%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .hero{
+        display: block; 
+        padding: 0 16px 32px;
+        margin-top: -48px; 
+    }
+    .hero .left{
+        display: inline;
+        border-color: rgb(194, 193, 193);
+        padding: 0;
+    }
+    .hero .left .buttons .type{
+        border: 1px solid rgb(194, 193, 193);
+        margin-right: 0 !important;
+    }
+    .left .file h3{
+        font-size: 16px;
+    }
+    .left .file a, .left .file  p{
+        font-size: 12px;
+        text-align: center;
+    }
+    .left .file input::placeholder{
+        font-size: 12px;
+        color: rgb(194, 193, 193);
+
+    }
+    .right{
+        width: 100%;
+        padding: 0 24px;
+        padding-bottom: 16px;
+        margin: 0;
+        border: 1px solid rgb(194, 193, 193);
+        border-radius: 8px;
+    }
+    .right .qrcode{
+        margin-left: -20px !important;
+        padding: 0;
+    }
+    
+    .right .qrcode{
+        width: 100%;
+        height: 100%;
+    }
+    .right .download_btn{
+        display: block;
+    }
+    .right .download_btn .download{
+        width: 100%;
+        margin-bottom: 8px;
+        padding: 8px 0;
+        font-size: 12px;
+        font-weight: 600px;
+    }
+    .right .download_btn .download:hover{
+        background-color: rgb(3, 126, 85);
+    }
+    #SVG{
+        margin: 0;  
+    }
+    #frame{
+        width: 100%;
+    }
+    .hero-bottom{
+       
+        display: block;
+        padding: 0;
+
+    }
+    .hero-bottom .hero-btm{
+        font-size: 12px;
+        font-weight: 500px;
+        word-wrap:normal;
+        text-align: center;
+        border: 1px solid rgb(246, 246, 246);
+        width: 100%;
+    }
+    .benefits{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 0 16px;
+        margin-top: 80px;
+    }
+    .benefits .content{
+        display: block;
+        width: 100%;
+
+    }
+    .benefits .content h2{
+        text-align: center !important;
+        font-weight: 600px !important;
+        margin-bottom: 40px;
+    }
+    .benefits .content p{
+        font-size: 12px;
+    }
+    .benefits .content .detail{
+        margin-top: 8px;
+    }
+    .benefits img{
+        width: 100%;
+        margin: 8px 0;
+    }
+    .dynamicvsstatic{
+        padding: 0 16px !important;
+        width: 100%;
+    }
+    #title{
+        width: 100%;
+        padding: 40px 16px;
+    }
+    #title p{
+        font-size: 12px;
+        margin-top: 40px;
+        text-align: left;
+    }
+    .compare{
+        display: block;
+        width: 100%;
+        margin-top: 24px;
+    }
+    .compare .compare-left .title, .compare .compare-right .title{
+        font-size: 8px;
+    }
+    .compare .compare-left{
+        width: 100%;
+        border: 1px solid rgb(246, 246, 246)
+    }
+    
+    .compare .compare-left p, .compare .compare-right p {
+        font-size: 12px;
+    }
+    .compare .compare-right{
+        width: 100%;
+        margin-top: 24px;
+        border: 1px solid rgb(246, 246, 246);
+    }
+    .create_code{
+        padding: 40px 16px;
+        margin: 0;
+    }
+    .create_code .title{
+        width: 20%;
+        font-size: 10px;
+    }
+    .create_code h2{
+        font-size: 22px;
+        font-weight: 600px;
+    }
+    .create_code .steps{
+        width: 100%;
+        justify-content: space-between;
+        margin: 0;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column; 
+        margin-bottom: 40px !important;   
+}
+    .create_code .steps .right{
+       margin: 0;
+       padding: 8px;
+       border: none;
+    }
+    .create_code .steps p{
+        font-size: 12px;
+        width: 100%;
+        margin: 0;
+    }
+    .create_code .steps h1{
+        color: rgb(3, 126, 85);
+    }
+    .create_code .steps .left{
+        box-shadow: 0;
+        box-shadow: 4px 4px rgb(3, 126, 85) !important;
+        border: 1px solid rgb(3, 126, 85);
+        width: 20%;
+        margin-bottom: 40px;
+    }
+    .create_code .step{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+        margin-bottom: 40px !important;
+    }
+    .create_code .step .right{
+        margin: 0;
+        padding: 8px;
+        border: none;
+     }
+     .create_code .step p{
+        font-size: 12px;
+        width: 100%;
+        margin: 0;
+    }
+    .create_code .step h1{
+        color: rgb(3, 126, 85);
+    }
+    .create_code .step .right{
+        border: none;
+
+    }
+    .create_code .step .left{
+        margin: 0 auto 32px;
+        box-shadow: 4px 4px rgb(3, 126, 85) !important;
+        border: 1px solid rgb(3, 126, 85);
+    }
+    .create_code .step h6, .steps h6{
+        font-size: 16px !important;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    .create_code #generate{
+        font-size: 14px;
+        margin:  48px auto 0;
+    }
+    .aboutsection{
+        display: block;
+        left: 0;
+        width: 100%;
+    }
+
+    .about{
+        background-color: rgb(3, 126, 85);
+        padding: 40px 16px 80px;    
+    }
+    .about h6{
+        font-size: 22px !important;
+        margin-bottom: 8px !important;
+    }
+    .about p{
+        font-size: 12px !important;
+        margin-top: 32px;
+    }
+    .about h5{
+        font-size: 14px !important;
+        font-weight: 600 !important;
+        margin-bottom: 4px;
+    }
+    .aboutsection button{
+        font-size: 14px;
+    }
+    .aboutsection{
+        display: block;
+        width: 100%;
+    }
+    .about .cards{
+        display: grid;
+        padding: auto 16px;
+        grid-gap: 16px;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        margin: 0;
+    }
+    .about .cards .card{
+        height: 100%;
+        width: 100%; 
+        box-sizing: border-box;
+        padding: auto;
+    }
+    .about .cards .card img{
+        width: 50%;
+        height: 50%;
+    }
+    .about .cards #middle, #top, #bottom{
+        margin: 0;
+        margin-bottom: 0;
+    }
+    .about #bottom{
+        margin-top: 16px;
+        height: 100%;
+        box-sizing: border-box;
+        padding: auto;
+    }
+    .aboutUs{
+        padding: 0;
+    }
+    .aboutUs h3{
+        font-size: 16px;
+        margin-top: 16px;
+    }
+    .aboutUs p{
+        font-size: 12px;
+    }
+    .aboutUs h1{
+        padding: 40px 0;
+    }
+    .contact{
+        padding: 0;
+        margin-bottom: 48px;        
+    }
+    .contact .title{
+        padding: 40px 0 80px;
+        margin-top: 48px;
+        margin: 0;
+    }
+    .contact #feedback-form-container{
+        width: 90%;
+        margin-top: -24px;
+    }
+    .contact #feedback-form{
+        width: 100%;
+        padding:  24px 16px 8px;
+    }
+    #feedback-form input,
+    #feedback-form textarea{
+        width: 100%;
+    }
+    .contact #feedback-form h5{
+        margin: 0;
+    }
+    #feedback-form button{
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    #footer{
+        padding: 40px 16px;
+    }
+    .footer{
+        display: inline-block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer #footer-logo{
+        font-size: 16px;
+        margin: 60px 0 20px;
+        text-align: left;
+    }
+    .footer p{
+        font-size: 12px;
+        text-align: left;
+    }
+    .footer ul{
+        margin-top: 56px;
+        text-align: left;
+        padding: 0;
+    }
+    .footer ul li a{
+        font-size: 12px;
+        margin-bottom: 4px !important;
+    }
+}
+@media screen and (max-width: 991px) {
+    body{
+        width: 100%;
+        padding: 0 32px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    }
+    .nav{
+        display: none;
+    }
+    .header{
+        padding: 0 !important;
+        width: 100%;
+        background-color: rgb(254, 254, 254);
+    }
+    #collapsibleNavbar{
+        display: none;
+    }
+    .herosec{
+        width: 100%;
+        padding: 20px 16px;
+        display: block;
+        text-align: left;
+    }
+    .herosec p{
+        font-size: 16px;
+    }
+    .herosec-images{
+        width: 100%;
+        display: block;
+        margin-top: 16px;
+    }
+    .herosec-images #img1, #sec-bottom{
+        display: none;
+    }
+    .herosec-img{
+        border-radius: 0%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .hero-bottom{
+        display: none;
+    }
+    .hero{
+        display: block; 
+        padding: 80px 16px;
+        margin-top: -48px;
+        box-sizing: border-box;
+    }
+    .hero .left{
+        display: inline;
+        border-color: rgb(194, 193, 193);
+        padding: 0;
+    }
+    .hero .left .buttons .type{
+        border: 1px solid rgb(194, 193, 193);
+        margin-right: 0 !important;
+    }
+    .left .file h3{
+        font-size: 16px;
+    }
+    .left .file a, .left .file  p{
+        font-size: 12px;
+        text-align: center;
+    }
+    .left .file input::placeholder{
+        font-size: 12px;
+        color: rgb(194, 193, 193);
+
+    }
+    .right{
+        width: 100%;
+        padding: 0 24px;
+        padding-bottom: 16px;
+        margin: 0;
+        border: 1px solid rgb(194, 193, 193);
+        border-radius: 8px;
+    }
+    .right .qrcode{
+        margin-left: 45px !important;
+        padding: 0;
+    }
+    
+    .right .qrcode{
+        width: 100%;
+        height: 100%;
+    }
+    .right .download_btn{
+        display: inline-block;
+        grid-template-columns: 1vf 1vf;
+        grid-template-rows: auto;
+    }
+    .right .download_btn .download{
+        width: 49.5%;
+        margin-bottom: 8px;
+        padding: 8px 0;
+        font-size: 12px;
+        font-weight: 600px;
+    }
+    #frame{
+        width: 100%;
+    }
+    #SVG{
+        margin: 0;  
+    }
+    #frame{
+        width: 100%;
+    }
+    .benefits{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 0 16px;
+        margin-top: 80px;
+    }
+    .benefits .content{
+        display: block;
+        width: 100%;
+
+    }
+    .benefits .content h2{
+        text-align: center !important;
+        font-weight: 600px !important;
+        margin-bottom: 40px;
+    }
+    .benefits .content p{
+        font-size: 12px;
+    }
+    .benefits .content .detail{
+        margin-top: 8px;
+    }
+    .benefits img{
+        width: 70%;
+        margin: 8px 15%;
+    }
+    .dynamicvsstatic{
+        padding: 0 !important;
+        width: 100%;
+    }
+    #title{
+        width: 100%;
+        padding: 40px 16px;
+    }
+    #title p{
+        font-size: 12px;
+        margin-top: 40px;
+        text-align: left;
+        text-align: center;
+    }
+    .compare{
+        display: flex;
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    .compare .compare-left .title, .compare .compare-right .title{
+        font-size: 8px;
+
+    }
+    .compare .compare-left{
+        width: 100%;
+        border: 1px solid rgb(246, 246, 246)
+    }
+    
+    .compare .compare-left p, .compare .compare-right p {
+        font-size: 12px;
+    }
+    .compare .compare-right{
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+        border: 1px solid rgb(246, 246, 246);
+    }
+    .create_code{
+        padding: 40px 16px;
+        margin: 0;
+    }
+    .create_code .title{
+        width: 50% !important;
+        font-size: 10px !important;
+    }
+    .create_code h2{
+        font-size: 22px;
+        font-weight: 600px;
+    }
+    .create_code .steps{
+        width: 100%;
+        justify-content: space-between;
+        margin: 0;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column; 
+        margin-bottom: 40px !important;   
+}
+    .create_code .steps .right{
+       margin: 0;
+       padding: 8px;
+       border: none;
+    }
+    .create_code .steps p{
+        font-size: 14px;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+    .create_code .steps h1{
+        color: rgb(3, 126, 85);
+    }
+    .create_code .steps .left{
+        box-shadow: 0;
+        box-shadow: 4px 4px rgb(3, 126, 85) !important;
+        border: 1px solid rgb(3, 126, 85);
+        width: 20%;
+        margin-bottom: 40px;
+    }
+    .create_code .step{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+        margin-bottom: 40px !important;
+    }
+    .create_code .step .right{
+        margin: 0;
+        padding: 8px;
+        border: none;
+     }
+     .create_code .step p{
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    .create_code .step h1{
+        color: rgb(3, 126, 85);
+    }
+    .create_code .step .right{
+        border: none;
+
+    }
+    .create_code .step .left{
+        margin: 0 auto 32px;
+        box-shadow: 4px 4px rgb(3, 126, 85) !important;
+        border: 1px solid rgb(3, 126, 85);
+    }
+    .create_code .step h6, .steps h6{
+        font-size: 16px !important;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    .create_code #generate{
+        font-size: 14px;
+        margin:  48px 20% 0;
+    }
+    .aboutsection{
+        display: block;
+        left: 0;
+        width: 100%;
+    }
+
+    .about{
+        background-color: rgb(3, 126, 85);
+        padding: 40px 16px 80px;    
+    }
+    .about h6{
+        font-size: 22px !important;
+        margin-bottom: 8px !important;
+    }
+    .about p{
+        font-size: 12px !important;
+        margin-top: 32px;
+    }
+    .about h5{
+        font-size: 14px !important;
+        font-weight: 600 !important;
+        margin-bottom: 4px;
+    }
+    .aboutsection button{
+        font-size: 14px;
+    }
+    .aboutsection{
+        display: block;
+        width: 100%;
+    }
+    .about .cards{
+        display: grid;
+        padding: auto 16px;
+        grid-gap: 16px;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        margin: 0;
+    }
+    .about .cards .card{
+        height: 100%;
+        width: 100%; 
+        box-sizing: border-box;
+        padding: auto;
+    }
+    .about .cards .card img{
+        width: 50%;
+        height: 50%;
+    }
+    .about .cards #middle, #top, #bottom{
+        margin: 0;
+        margin-bottom: 0;
+    }
+    .about #bottom{
+        margin-top: 16px;
+        height: 100%;
+        box-sizing: border-box;
+        padding: auto;
+    }
+    .aboutUs{
+        padding: 0;
+    }
+    .aboutUs h3{
+        font-size: 16px;
+        margin-top: 16px;
+    }
+    .aboutUs p{
+        font-size: 12px;
+    }
+    .aboutUs h1{
+        padding: 40px 0;
+    }
+    .contact{
+        padding: 0;
+        margin-bottom: 48px;        
+    }
+    .contact .title{
+        padding: 40px 0 80px;
+        margin-top: 48px;
+        margin: 0;
+    }
+    .contact #feedback-form-container{
+        width: 90%;
+        margin-top: -24px;
+    }
+    .contact #feedback-form{
+        width: 100%;
+        padding:  24px 32px 8px;
+    }
+    #feedback-form input,
+    #feedback-form textarea{
+        width: 100%;
+    }
+    .contact #feedback-form h5{
+        margin: 0;
+    }
+    #feedback-form button{
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    #footer{
+        background-color: rgb(3, 126, 85);
+        padding: 100px 32px 20px;
+    }
+    .footer{
+        color: rgb(254, 254, 254);
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto;
+        justify-content: space-between;
+    }
+    
+    .foot-item a, li{
+        color: rgb(194, 193, 193);
+        text-decoration: none;
+        list-style-type: none;
+    }
+    #footer-logo p{
+        font-size: 12px;
+        color: rgb(155, 155, 155);
+    }
+    .footer-nav h6{
+        margin-bottom: 32px;
+        font-size: 16px;
+    }
+    .footer-nav-social h6{
+        margin-bottom: 24px;
+    }
+    .footer-nav li{
+        font-size: 14px;
+        color: rgb(155, 155, 155);
+        padding-bottom: 4px;
+    }
+    .footer-nav-social li{
+        display: inline;
+        cursor: pointer;
+        margin-right: 16px;
+        font-size: 14px;
+        color: rgb(155, 155, 155);
+    }
+    .footer p{
+        text-align: center;
+        font-size: 12px;
+    }
+    .bottom{
+        padding: 40px 0;
+    }
+    .footnote{
+        color: rgb(155, 155, 155);
+        font-size: 12px;
+        text-align: center;
+        border-top: 1px solid rgba(194, 193, 193, 0.164);
+        padding: 40px 0;
+    }
+}
+

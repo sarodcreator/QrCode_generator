@@ -7,19 +7,21 @@
     <meta name="keywords" content="QR code, generator, dynamic QR, static QR, QR tracking">
     <title>Qr Generator</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="query.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="signup.js"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
-    
     <section class="header">
         <nav class="navbar navbar-expand-sm bg-tranparent">
             <div class="container-fluid">
-            <a class="navbar-brand" href="#">QRCODE_generator</a>
+            <a class="navbar-brand" href="#header">QRCODE_generator</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -28,42 +30,48 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown">Qr Codes</a>
                         <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Static QR codes</a></li>
-                        <li><a class="dropdown-item" href="#">Dynamic QR codes</a></li>
+                            <li><a class="dropdown-item" href="#staticqrcode">Static QR codes</a></li>
+                            <li><a class="dropdown-item" href="#dynamicqrcode">Dynamic QR codes</a></li>
                         </ul>
                     </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">Why us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">FAQ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
-                </li>  
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutUs">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactUs">Contact Us</a>
+                    </li> 
                 </ul>
-            </div>
-            <div class="buttons">
-                <a href="#loginPopup"><button class="CTA" id="login" type="button">Login</buttons></a>
-                <button class="CTA" id="signup" type="button">Sign Up</button>
-            </div>
-            <div id="loginPopup" class="popup">
-                <div class="popup-content">
-                    <span class="close-btn" id="closeBtn">&times;</span>
-                    <h2>Login</h2>
-                    <form id="loginForm">
-                        <label for="username">Username:</label>
-                        <input type="text" id="username" name="username" required>
-                        <label for="password">Password:</label>
-                        <input type="password" id="password" name="password" required>
-                        <button type="submit">Submit</button>
-                    </form>
-                </div>
-            </div>
-            </div>
+            </div>  
         </nav>
     </section>
-    <section class="hero">
+    <section class="herosec">
+        <div class="herosec-dt">
+            <h6>Do you want to</h6>
+            <h1>Generate QR Codes?</h1>
+            <p> you don’t have to manually type the name, phone number, and email address to save it to your phone.</p>
+            <button><a href="#hero">Generate</a></button>
+        </div>
+        <div class="herosec-images">
+            <div class="herosec-img" id="img1">
+                <img src="/images/9457140_4170815-removebg-preview.png" alt="">
+            </div>
+            <div class="herosec-img">
+                <img src="/images/image.png" id="img2" alt="">
+            </div>
+            <div class="herosec-img" id="sec-bottom">
+                <img src="images/9543856_4209056-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <section class="bottom">
+            <div class="hero-bottom">
+                <div class="hero-btm">Dynamic QR Codes</div>
+                <div class="hero-btm">Static QR codes</div>
+                <div class="hero-btm">Easy to Use</div>
+                <div class="hero-btm">Customize Codes</div>
+            </div>
+        </section>
+    </section>
+    <section class="hero" id="hero">
         <div class="left">
             <div class="buttons">
                 <button class="type" id="#" type="button">URL</button>
@@ -94,14 +102,7 @@
             </div>
         </div>
     </section>
-    <section class="bottom">
-        <div class="hero-bottom">
-            <div class="hero-btm">Dynamic QR Codes</div>
-            <div class="hero-btm">Static QR codes</div>
-            <div class="hero-btm">Easy to Use</div>
-            <div class="hero-btm">Customize Codes</div>
-        </div>
-    </section>
+
     <section class="benefits" id="about">
         <div><img src="/images/growth.png" alt=""></div>
         <div class="content">
@@ -109,20 +110,198 @@
             <p>By using QR.io you will be able keep track of how many people scan your QR Codes, from where and on what date.<br><br>for those non-developers you can create fully customized landing pages for your QR Codes. No Coding Required!</p>
             <div class="detail">
                 <div class="services">
-                    <i class="material-icons"></i><p>DYNAMIC QRCODES</p>
+                    <i class="fas fa-check"></i>DYNAMIC QRCODES
                 </div>
                 <div class="services">
-                    <i class="material-icons"></i><p>STATIC QRCODES</p>
+                    <i class="fas fa-check"></i>STATIC QRCODES
                 </div>
                 <div class="services">
-                    <i class="material-icons"></i><p>QR Code Statistics</p>
+                    <i class="fas fa-check"></i>QR Code Statistics
                 </div>
                 <div class="services">
-                    <i class="material-icons"></i><p>No Coding required</p>
+                    <i class="fas fa-check"></i>No Coding required
                 </div>
             </div>
             
         </div>
+    </section>
+    <section class="dynamicvsstatic">
+        <div id="title">
+            <h2><strong>Dynamic</strong> vs <strong>Static</strong> QR Codes</h2>
+        <p>The outcome of both are pretty similar. They have their differences when it comes to changes, updates, stats, track.</p>
+        </div>
+        <div class="compare">
+            <div class="compare-left" id="dynamicqrcode">
+                <p class="title">Dynamic</p>
+                <img src="/images/dynamic (1).png" alt="dynamic qrcode">
+                <h5>Dynamic QR Codes</h5>
+                <p>With Dynamic Qr Codes you can create a customized landing page for your QR Code that can be changed and updated whenever you want no matter if the QR Code is created or even if it went public.
+                    <br><br>
+                    Dynamic Qr Codes also give you statistics of how many people scanned your QR Codes, from where and on what date.
+                    <br><br>
+                    This QR Code type is most used by business owners (restaurants, gyms, clothing stores, etc.), artists, influencers, and non-developers users.</p>
+            </div>
+            <div class="compare-right" id="staticqrcode">
+                <p class="title">Static</p>
+                <img src="/images/static.png" alt="static" >
+                <h5>Static QR Codes</h5>
+                <p>Static QR Codes on the other hand can't be changed or updated once created and went public.
+                    <br><br>
+                    Also, static QR Codes do NOT give you statistics of how many people scanned your QR Codes, from where and on what date.
+                    <br><br>
+                    This QR Code type is most used by developers and users who can create an url (landing page) for themselves.
+                    
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="create_code">
+        <div>
+            <div><p class="title">How to Use</p>
+                <h2>Creating QR Codes with QR.io is pretty simple, create an account and use our QR Code Generator to create unlimited dynamic & static QR Codes.</h2></div>
+            <div class="steps">
+                <div class="left"><h1>1</h1></div>
+                <div class="right">
+                    <h6>Choose QR Code Type</h6>
+                    <p>First step would be to choose your QR Code Type. This will define what your QR Code will do.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="right">
+                    <h6>Fill required fields</h6>
+                    <p>Then, you'll need to fill the required fields that the QR Code type is asking. For example, Type 'Link' will ask for a website URL.</p>
+                </div>
+                <div class="left"><h1>2</h1></div>
+            </div>
+            <div class="steps">
+                <div class="left"><h1>3</h1></div>
+                <div class="right">
+                    <h6>Download & Share QR Code</h6>
+                    <p>Finally, you can download and share your QR Code Generated from your dashboard and edit if needed.</p>
+                </div>
+            </div>
+        </div>
+        <button id="generate"><a href="#hero">Generate QR Code</a></button>
+    </section>
+    <section class="about" id="qrcodes">
+        <div class="aboutsection">
+            <div class="left">
+                <h5>What are QR Codes?</h5>
+                <h1>QR Codes stands for 'Quick Response'</h1>
+                <p>They were created in 1994 by Denso Wave to track vehicles during manufacturing. They quickly gain popularity when it spread to smartphones.
+                You can now even scan QR Codes from your phone camera.
+                <br><br>    
+                I will break down some of the benefits from using QR Codes and the most requested QR Codes features
+            </p>
+            <button><a href="#hero">Generate</a></button>
+            </div>
+            <div class="cards">
+                <div class="card" id="top">
+                    <img src="/images/glare-isometric-candidate-cards-with-glow.png" alt="profile cards with glow">
+                    <h6>Profile Cards</h6>
+                    <p>Physical profile cards are every day more rare and digital profile cards are a great alternative.</p>
+                </div>
+                <div class="card" id="middle">
+                    <img src="/images/smart-phone-with-the-qr-code-payment-process.png" alt="phone payments with qr code">
+                    <h6>Make Payments</h6>
+                    <p>You can make payments when people scan the QR code.</p>
+                </div>
+                <div class="card" id="bottom">
+                    <img src="/images/airy-charts-and-calculations-for-business-analytics.png" alt="business image">
+                    <h6>Describe your Business</h6>
+                    <p>You can redirect your clients to some instruction page for your business when they scan the QR Code.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="aboutUs" id="aboutUs">
+        <h1>About Us</h1>
+            <h3>About QRCODE_generator?</h3>
+            <p>QR codes were steadily growing in popularity. However, the pandemic escalated businesses and marketers’ appetite for them, and it’s not hard to see why. QR codes help to drive traffic to landing pages, share important information and increase engagement with customers.
+            <br><br>
+                QRCODE_generator is designed to provide speed and security, providing a better way to share information, make payments, or get feedbacks from clients.
+            </p>
+            <h3>Who are we?</h3>
+            <p>QRCODE_generator was founded and developed by Baridoo Saro. This a portfolio project performed for Alx. I believe that businesses and approach is soon to be completely changed with this amazing and super fast QR Codes.</p>
+        </div>
+
+    </section>
+    <section class="contact" id="contactUs">
+        <div class="title"><h1>Contact Us</h1></div>
+        <div id="feedback-form-container">
+            <form id="feedback-form">
+                <h5>Send Us a feedback</h5>
+                <div class="input-container">
+                    <label for="name">Name:</label>
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="name" name="name" placeholder="John" required>
+                </div>
+                <div class="input-container">
+                    <label for="email">Email:</label>
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="email" name="email" Placeholder="@mail.com" required>
+                </div>
+                <div class="input-container">
+                    <label for="description">Caption:</label>
+                   <i class="fas fa-pencil-alt"></i>
+                   <input type="text" id="caption" name="caption" placeholder="Title" required>
+                </div>
+                <div class="input-container">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Hi! i would like to..." required></textarea>
+                </div>
+                <button type="submit">Submit<i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+            </form>
+        </div>
+    </section>
+    <section id="footer">
+        <div>
+            <div class="footer">
+                <div id="footer-logo" ><h5><a class="navbar-brand" href="#header">QRCODE_generator</a></h5>
+                <p>Creating beautiful and fast QR Codes</p></div>
+                <div class="footer-nav">
+                    <ul>
+                        <h6>Product</h6>
+                        <li class="foot-item">
+                            <a class="foot-link" href="#qrcodes">QR Codes</a>
+                        </li>
+                        <li class="foot-item">
+                            <a class="foot-link" href="#staticqrcode">Static QR Code</a>
+                        </li>
+                        <li class="foot-item">
+                            <a class="foot-link" href="#dynamicqrcode">Dynamic QR Codes</a>
+                        </li>  
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <ul>
+                        <h6>Company</h6>
+                        <li class="foot-item">    
+                            <a class="foot-link" href="#contactUs">Contact Us</a>
+                            </li>
+                            <li class="foot-item">    
+                                <a class="foot-link" href="#aboutUs">About Us</a>
+                            </li> 
+                        </ul>
+                </div>
+                <div class="footer-nav-social">
+                    <ul>
+                        <h6>Follow Us</h6>
+                        <li class="foot-item">
+                                <i class="fa fa-instagram"><a class="foot-link" href=""></a></i>
+                            </li>
+                            <li class="foot-item">
+                                <i class="fa fa-facebook"><a class="foot-link" href=""></a></i>
+                            </li>
+                            <li class="foot-item">
+                                <i class="fa fa-linkedin"><a class="foot-link" href=""></a></i>
+                            </li>  
+                        </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footnote"><p>All rights reserved</p></div>
+        
     </section>
     
 </body>
